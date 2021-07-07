@@ -59,11 +59,11 @@ const Cart = ({ toggleDrawer, cartItems, onAdd, onRemove }) => {
                                             >
                                                 ฿{formatPrice(item.price)}
                                                 <IconButton color="primary" aria-label="add to shopping cart" onClick={() => onRemove(item)}>
-                                                    <IndeterminateCheckBox onClick={() => onRemove(item)} />
+                                                    <IndeterminateCheckBox />
                                                 </IconButton>
                                                 {item.qty}
                                                 <IconButton color="primary" aria-label="add to shopping cart" onClick={() => onAdd(item)}>
-                                                    <AddBoxIcon onClick={() => onAdd(item)} />
+                                                    <AddBoxIcon />
                                                 </IconButton>
                                             </Typography>
                                         </React.Fragment>} />

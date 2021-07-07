@@ -59,11 +59,9 @@ function App() {
 
   return (
     <div>
-
       <Nav cartItems={cartItems}
         onAdd={onAdd}
         onRemove={onRemove} />
-
       {loading && <div>Loading...</div>}
       {error && <div>{error}</div>}
       {robots && <RobotList robots={robots} onAdd={onAdd} />}
